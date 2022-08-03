@@ -1,0 +1,55 @@
+{
+      "name": "Chat-Bot",
+      "description": "Hello, I am Chat-Bot, An Intelligent ChatBot. If You Are Feeling Lonely, You can Always Come to me and Chat With Me!",
+      "logo": "https://telegra.ph/file/de608084644c416309220.jpg",
+      "keywords": [
+         "telegram",
+         "anime",
+         "chat",
+         "bot",
+         "simple"
+      ],   
+   "repository": "https://github.com/VenujASB/Chat-Bot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Get one from @BotFather",
+         "required": true,
+         "value": ""
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+       }
+   },
+   "keywords": [
+      "telegram",
+      "anime",
+      "chat",
+      "bot",
+      "simple"
+   ],
+   "name": "Chat-Bot",
+   "repository": "https://github.com/VenujASB/Chat-Bot"
+}
