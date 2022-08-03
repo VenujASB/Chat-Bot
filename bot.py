@@ -28,7 +28,7 @@ async def fetch(url):
 
 
 @bot.on_message(filters.text & ~filters.private & ~filters.edited & ~filters.bot & ~filters.via_bot & ~filters.channel & ~filters.forwarded)
-async def mizuki(client, message):
+async def chat(client, message):
     chat_id = message.chat.id
     if not message.reply_to_message:
         message.continue_propagation()
