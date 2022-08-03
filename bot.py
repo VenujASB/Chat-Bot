@@ -12,8 +12,8 @@ translator = google_translator()
 BOT_TOKEN = Config.BOT_TOKEN
 BOT_ID = Config.BOT_ID
 
-bot = Client("AbhishekChat", bot_token=BOT_TOKEN, api_id=6,
-             api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
+bot = Client("AbhishekChat", bot_token=BOT_TOKEN, api_id=API_ID,
+             api_hash=API_HASH)
 print("\nAbhishek Chatbot Started!\n")
 
 
